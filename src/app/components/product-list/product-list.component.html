@@ -1,0 +1,28 @@
+<div class="product-table">
+    <h2>Catálogo de Productos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td><img [src]="product.image" [alt]="product.name" class="product-image" /></td>
+          <td>{{ product.name }}</td>
+          <td>${{ product.price }}</td>
+          <td>
+            <button (click)="buyProduct(product)">Comprar</button>
+            <button (click)="viewDetails(product)">Ver Detalles</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <button class="total-btn" (click)="calculateTotal()">Calcular Total</button>
+    <p *ngIf="totalPrice > 0">Total: <strong>${{ totalPrice }}</strong></p>
+  </div>
+  
