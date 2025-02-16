@@ -22,7 +22,10 @@
       </tbody>
     </table>
   
-    <button class="total-btn" (click)="calculateTotal()">Calcular Total</button>
-    <p *ngIf="totalPrice > 0">Total: <strong>${{ totalPrice }}</strong></p>
+    <div class="total-container">
+      <button class="total-btn" (click)="calculateTotal()">Calcular Total</button>
+      <p *ngIf="totalPrice > 0">Total: <strong>${{ totalPrice }}</strong></p>
+    </div>
+
   </div>
   
