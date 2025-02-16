@@ -4,6 +4,17 @@
 
 Este documento describe la implementación de un **componente en Angular 19** que muestra una tabla con productos de un e-commerce. La solución sigue las mejores prácticas del framework y se estructura de manera modular para mejorar la escalabilidad y el mantenimiento del código.
 
+Tasks
+- [x] Usar @Component para definir el componente.
+- [x] Implementar un array de productos con id, name, price e image.
+- [x] Usar *ngFor para recorrer los productos en el HTML.
+- [x] Aplicar estilos modernos para una interfaz atractiva.
+- [x] Asegurarse de que las imágenes carguen correctamente desde assets/.
+
+Bonus Challenge (Opcional pero recomendado)
+- [x] Agregar botones para "Comprar" o "Ver detalles".
+- [x] Implementar una función para calcular el precio total de los productos.
+
 ## 🌐 Tecnologías Utilizadas
 
 - **Angular 19** (Standalone Components)
